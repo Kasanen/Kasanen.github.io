@@ -1,0 +1,222 @@
+html {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    height: 100vh;
+}
+
+hr {
+    margin: 1px;
+}
+
+/* Teksti tyylit */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Showcase */
+.showcase {
+    background: linear-gradient(344deg, #eeeb52, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 50s ease infinite;
+    background-size: 200%;
+
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    height: 100vh;
+}
+
+.showcase h1 {
+    color: white;
+    opacity: 85%;
+}
+
+.showcase p {
+    color: white;
+    font-size: 20px;
+    opacity: 85%;
+}
+
+.showcase a {
+    color: white;
+    font-size: 30px;
+    opacity: 85%;
+    text-decoration: underline;
+    z-index: 1;
+}
+
+.showcase a:hover {
+    animation: vilkku 1.5s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.palmu {
+    position: absolute;
+    height: 50vh;
+    left: 0;
+    top: 50vh;
+    filter: invert(1);
+}
+
+/* Projektit */
+.projektit {
+    background: white;
+    padding: 0 20px;
+    height: 100vh;
+}
+
+.projektit h1 {
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    height: 75%;
+}
+
+.container h1 {
+    font-size: 40px;
+}
+
+.otsikko {
+    height: 10%;
+}
+
+.otsikko h1 {
+    padding: 5px;
+}
+
+/* Projektit Erikseen */
+.box {
+    height: 40%;
+    display: flex;
+}
+
+.box > * {
+    flex-grow: 1;
+}
+
+.projektiOma {
+    margin: 10px;
+    width: 50%;
+    display: flex;
+    text-align: center;
+}
+
+.projektiJako {
+    width: 50%;
+}
+
+.projektiKoulu {
+    margin: 10px;
+    width: 33%;
+    text-align: center;
+}
+
+.projekti h2 {
+    height: 20%;
+    color: black;
+    text-decoration: underline;
+}
+
+.projekti p {
+    height: 20%;
+    color: black;
+}
+
+.projekti {
+    text-decoration: none;
+    border-style: none dashed none dashed;
+    border-width: 1px;
+    border-color: black;
+}
+
+.projekti:hover {
+    animation: vilkku 1.5s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.projektiKuva {
+    height: 80%;
+    width: 80%;
+}
+
+/* Responsiivisuus */
+@media (max-width: 1050px) {
+    .projekti {
+        align-items: center;
+    }
+
+    .projektiKuva {
+        display: none;
+    }
+}
+
+@media (min-width: 750px) {
+    .otsikko2 {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .palmu {
+        height: 30vh;
+        top: 70vh;
+    }
+
+    .projektiJako {
+        display: none;
+    }
+
+    .projektiOma {
+        display: block;
+    }
+}
+
+
+/* Animaatiot */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes vilkku {
+    0% {
+        opacity: 85%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 85%;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto+Condensed:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="showcase">
+        <h1>Veijo Kasanen</h1>
+        <p>Web Kehittäjä</p>
+        <a href="#projektit" class="projektitNappi">Katso Projektit</a>
+        <img src="images/Lovepik_com-450090260-Palm Tree Vector.png" alt="Palmu" class="palmu">
+    </header>
+
+    <!-- Section -->
+    <section id="projektit" class="projektit">
+        <h1>Projektit</h1>
+        <div class="container">
+            <!-- Omat projektit -->
+            <div class="otsikko">
+                <h1>Omat projektit</h1>
+            </div>
+
+            <div class="box">
+                <a href="https://github.com/Kasanen/TimeTracking" class="projektiOma projekti">
+                    <h2 class="otsikko2">Time Tracking Dashboard</h2>
+                    <div class="projektiJako">
+                        <img src="./images/TimeTrackingDashboard.jpg" alt="ProjektiKuva" class="projektiKuva">
+                        <h2>Time Tracking Dashboard</h2>
+                    </div>
+                    <div class="projektiJako">
+                        <p>
+                            Projekti käyttää CSS gridejä. Sivu toimii JavaScriptin avulla.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Kasanen/AdviceGenerator" class="projektiOma projekti">
+                    <h2 class="otsikko2">Advice Generator App</h2>
+                    <div class="projektiJako">
+                        <img src="./images/AdviceGeneratorApp.jpg" alt="ProjektiKuva" class="projektiKuva">
+                        <h2>Advice Generator App</h2>
+                    </div>
+                    <div class="projektiJako">
+                        <p>
+                            Projekti, joka on vuorovaikutuksessa kolmannen osapuolen sovellusliittymien kanssa.
+                            Tämä projekti käyttää Advice Slip API -sovellusta satunnaisten neuvojen luomiseen.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <hr>
+            <!-- Koulu projektit -->
+            <div class="otsikko">
+                <h1>Koulu projektit</h1>
+            </div>
+
+            <div class="box">
+                <a href="https://public.bc.fi/s2000971/portfolio/" class="projektiKoulu projekti">
+                    <img src="./images/public.bc.fi_s2000971_portfolio_.png" alt="ProjektiKuva" class="projektiKuva">
+                    <h2>Koulun Portfolio</h2>
+                </a>
+
+                <a href="https://public.bc.fi/s2000971/react-ja-redux-tehtavat/" class="projektiKoulu projekti">
+                    <img src="./images/public.bc.fi_s2000971_react-ja-redux-tehtavat_.png" alt="ProjektiKuva" class="projektiKuva">
+                    <h2>React Ja Redux Tehtävät</h2>
+                </a>
+
+                <a href="https://public.bc.fi/s2000971/ohjelmointi/" class="projektiKoulu projekti">
+                    <img src="./images/public.bc.fi_s2000971_ohjelmointi_index.html.png" alt="ProjektiKuva" class="projektiKuva">
+                    <h2>Javascript-ohjelmia sivu</h2>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="/script.js"></script>
+
+</html>
